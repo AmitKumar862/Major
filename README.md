@@ -13,7 +13,7 @@ A futuristic, space-themed web application to search and explore GitHub user pro
 
 * **User Search:** Enter a username to find any GitHub profile.
 * **Profile Stats:** View followers, following, bio, and location.
-* **Mission Log:** See the user's latest repositories and star counts.
+* **Repository Log:** See the user's latest repositories and star counts.
 * **Cool Design:** Animated space background with a "Dark Glass" neon look.
 
 ## 🛠️ Technologies Used
@@ -28,7 +28,7 @@ If you want to run the code on your own computer instead of using the link:
 2.  Open **`index.html`** in your web browser.
 
 ~~~
-GitHubGalaxyExplorer/
+GitHubUserExplorer/
 │
 ├── index.html        # The main webpage
 ├── style.css         # The styling (Space theme)
