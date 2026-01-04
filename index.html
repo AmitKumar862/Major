@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Galaxy Explorer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="main-container">
+        
+        <header>
+            <div class="logo">
+                <i class="fab fa-github-alt"></i>
+                <h1>GitHub User Explorer</h1>
+            </div>
+            <p class="subtitle">Explore the coder universe.</p>
+            
+            <div class="search-wrapper">
+                <div class="search-input-group">
+                    <input type="text" id="search-input" placeholder="Search username ">
+                    <button id="search-btn">
+                        <i class="fas fa-rocket"></i> Search
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div id="error-msg" class="error-msg hidden">
+            <i class="fas fa-meteor"></i> <span></span>
+        </div>
+
+        <main id="main-content" class="hidden fade-in">
+            
+            <section class="profile-card">
+                <div class="profile-content">
+                    <img id="avatar" src="" alt="User Avatar" class="avatar">
+                    <div class="profile-details">
+                        <div class="profile-name-group">
+                            <h2 id="name"></h2>
+                            <a id="username" href="#" target="_blank">@username <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p id="bio" class="bio">No transmission received (Bio empty).</p>
+                        
+                        <div class="profile-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-satellite"></i>
+                                <span><strong id="followers">0</strong> Followers</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-user-astronaut"></i>
+                                <span><strong id="following">0</strong> Following</span>
+                            </div>
+                            <div class="meta-item" id="location-container">
+                                <i class="fas fa-globe-americas"></i>
+                                <span id="location">Unknown</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="repos-section">
+                <h3><i class="fas fa-code-branch"></i> Repositories</h3>
+                <div id="repos-container" class="repos-grid">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
