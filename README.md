@@ -36,4 +36,5 @@ GitHubUserExplorer/
 └── README.md         # Documentation
 ~~~
 ---
-*Created by Amit Kumar *
+
+## Created by Amit Kumar 
